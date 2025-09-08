@@ -18,11 +18,11 @@ public class Pattern_8 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int NumberOfLines = s.nextInt();
-        for(int i=NumberOfLines;i>0;i--){
-            for(int j=0;j<NumberOfLines-i;j++){
+        for(int row=NumberOfLines;row>0;row--){
+            for(int col=0;col<NumberOfLines-row;col++){
                 System.out.print(" ");
             }
-            for(int j=0; j<(2*i)-1; j++) {
+            for(int col=0; col<(2*row)-1; col++) {
                 System.out.print("*");
             }
             System.out.println();

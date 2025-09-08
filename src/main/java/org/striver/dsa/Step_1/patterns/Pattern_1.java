@@ -17,8 +17,8 @@ public class Pattern_1 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int NumberOfLines = s.nextInt();
-        for(int i=0;i<NumberOfLines;i++){
-            for(int j=0;j<NumberOfLines;j++){
+        for(int row=0;row<NumberOfLines;row++){
+            for(int col=0;col<NumberOfLines;col++){
                 System.out.print("*");
             }
             System.out.println();

@@ -5,22 +5,22 @@ import java.util.Scanner;
 
 /**
  *  Print the below pattern  for N=6
-        1 2 3 4 5 6
-        1 2 3 4 5
-        1 2 3 4
-        1 2 3
-        1 2
-        1
+     A
+     AB
+     ABC
+     ABCD
+     ABCDE
+     ABCDEF
  *
  **/
 
-public class Pattern_6 {
+public class Pattern_14 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int NumberOfLines = s.nextInt();
-        for(int row=0;row<NumberOfLines;row++){
-            for(int col=NumberOfLines;col>row;col--){
-                System.out.print(NumberOfLines-col+1);
+        for(int row=1;row<=NumberOfLines;row++){
+            for(char col='A';col<='A'+row;col++){
+                System.out.print(col);
             }
             System.out.println();
         }

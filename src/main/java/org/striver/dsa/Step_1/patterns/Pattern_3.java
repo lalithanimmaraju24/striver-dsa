@@ -18,9 +18,9 @@ public class Pattern_3 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int NumberOfLines = s.nextInt();
-        for(int i=0;i<NumberOfLines;i++){
-            for(int j=0;j<=i;j++){
-                System.out.print(j+1);
+        for(int row=0;row<NumberOfLines;row++){
+            for(int col=0;col<=row;col++){
+                System.out.print(col+1);
             }
             System.out.println();
         }

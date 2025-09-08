@@ -23,14 +23,14 @@ public class Pattern_10 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int NumberOfLines = s.nextInt();
-        for(int i=0;i<NumberOfLines-1;i++){
-            for(int j=0;j<=i;j++){
+        for(int row=0;row<NumberOfLines-1;row++){
+            for(int col=0;col<=row;col++){
                 System.out.print("*");
             }
             System.out.println();
         }
-        for(int i=0;i<NumberOfLines;i++){
-            for(int j=NumberOfLines;j>i;j--){
+        for(int row=0;row<NumberOfLines;row++){
+            for(int col=NumberOfLines;col>row;col--){
                 System.out.print("*");
             }
             System.out.println();
